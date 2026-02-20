@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Mask Detection System</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        img {
+            border: 5px solid #ddd;
+            border-radius: 5px;
+            max-width: 100%;
+            height: auto;
+        }
+        .status {
+            margin-top: 15px;
+            font-size: 1.2em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Face Mask Detection Live Feed</h1>
+        <img src="{{ url_for('video_feed') }}" alt="Live Video Feed">
+        <div class="status">System Status: <strong>Active</strong></div>
+        <p><small>Green = Mask | Red = No Mask</small></p>
+    </div>
+</body>
+</html>
