@@ -40,3 +40,7 @@ ENV/
 env.bak/
 venv/
 VE
+
+# Model files
+*.pkl
+*.joblib
