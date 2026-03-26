@@ -1,0 +1,8 @@
+pandas
+numpy
+scikit-learn
+# scikit-surprise  # Not needed (code uses sklearn), skip due to build error on Windows
+streamlit
+jupyter
+matplotlib
+seaborn
